@@ -18,59 +18,94 @@
     <source src="videos/mountains.mp4">
   </video><br>
   <hr>
-  <!-- Agregamos un formulario -->
-  <form action="">
-    <label for="nombre">Nombre: 
-    <input id="nombre" maxlength="15" placeholder="Tu nombre va aquí" type="text">
-    </label>
-    <br>
-    <br>
+  <article>
+    <!-- Agregamos un formulario -->
+    <form action="">
+      <fieldset> <!-- Encierra en un cuadro-->
+        <legend>Primera Parte</legend> <!--Agregamos un titulo-->
+        <br>
+        <label for="nombre">Nombre: 
+          <input id="nombre" maxlength="15" placeholder="Tu nombre va aquí" type="text">
+        </label>
+        <br>
+        <br>
 
-    <label for="edad">Edad:
-    <input id="edad" type="range" min="12" max="50" step="5"> <!--tipo rango -->
-    </label>
-    <br>
-    <br>
+        <label for="edad">Edad:
+          <input id="edad" type="range" min="12" max="50" step="5"> <!--tipo rango -->
+        </label>
+        <br>
+        <br>
 
-    <label for="tiempo_en_la_compañia">Salario: 
-      <input id="tiempo_en_la_compañia" type="number" min="100" max="700" step="50" value="100">
-    </label>
-    <br>
-    <br>
+        <label for="tiempo_en_la_compañia">Salario: 
+          <input id="tiempo_en_la_compañia" type="number" min="100" max="700" step="50" value="100">
+        </label>
+        <br>
+        <br>
 
-    <!-- Creamos un password -->
-    <label for="clave">Ingresa tu clave: 
-      <input type="password" id="clave">
-    </label>
-    <br>
-    <br>
+        <!-- Creamos un password -->
+        <label for="clave">Ingresa tu clave: 
+          <input type="password" id="clave">
+        </label>
+        <br>
+        <br>
 
-    <!-- Colocamos un calendario -->
-    <label for="fecha">Fecha:
-      <input type="date" min="2000-01-01" value="2000-01-01" max="2030-12-31">
-    </label>
-    <br>
-    <br>
+        <!-- Colocamos un calendario -->
+        <label for="fecha">Fecha:
+          <input type="date" min="2000-01-01" value="2000-01-01" max="2030-12-31">
+        </label>
+        <br>
+        <br>
 
-    <!-- Creamos campo de email -->
-    <label for="email">Correo: 
-      <input id="email" type="email" placeholder="Coloca tu correo">
-    </label>
-    <br><br>
+        <!-- Creamos campo de email -->
+        <label for="email">Correo: 
+          <input id="email" type="email" placeholder="Coloca tu correo">
+        </label>
+        <br><br>
 
-    <!-- Creamos un selector de color -->
-    <input type="color">
-    <br><br>
+        <!-- Creamos un selector de color -->
+        <input type="color">
+        <br><br>
 
-    <!-- Creamos opcion para subir archivos -->
-    <input type="file">
+        <!-- Creamos opcion para subir archivos -->
+        <input type="file">
+      </fieldset>
+    </form>
+  </article>
 
-  </form>
-
+  <article>
+    <fieldset>
+      <legend>Segunda Parte</legend>
+      <select name="" id="">
+        <option value="">Medellin</option>
+        <option value="">Bogotá</option>
+        <option value="">Cali</option>
+        <option value="">Barranquilla</option>
+        <option value="">Bucaramanga</option>
+      </select>
+      <br><br>
+      <!-- Agregamos botones tipo radio -->
+      <label for="">
+        <input type="radio"  name="estado_civil">
+        Casado(a)
+      </label><br><br>
+      <label for="">
+        <input type="radio" name="estado_civil" checked>
+        Soltero(a)
+      </label><br><br>
+      <label for="">
+        <input type="radio" name="estado_civil">
+        Viudo(a)
+      </label><br><br>
+      <label for="">
+        <input type="radio" name="estado_civil">
+        Divorciado(a)
+      </label><br><br>
+    </fieldset>
+  </article>
 
   <hr>
   <a href="index.html">Regresar</a>
- 
+
 </body>
 
 </html>

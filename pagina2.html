@@ -21,6 +21,7 @@
   <article>
     <!-- Agregamos un formulario -->
     <form action="">
+      <input type="hidden" name="123456"> <!--Para enviar informacion oculta "codigo de compra"-->
       <fieldset> <!-- Encierra en un cuadro-->
         <legend>Primera Parte</legend> <!--Agregamos un titulo-->
         <br>
@@ -68,9 +69,20 @@
 
         <!-- Creamos opcion para subir archivos -->
         <input type="file">
+      
       </fieldset>
+      <br>
+      
+      <!-- opciones de envio del formulario -->
+      <input type="button" value="Enviar">
+  
+      <input type="submit" value="Enviar 2">
+
+      <input type="reset" value="Borrar formulario">
+      <br><br>
     </form>
   </article>
+  <br><br>
 
   <article>
     <fieldset>
@@ -83,6 +95,7 @@
         <option value="">Bucaramanga</option>
       </select>
       <br><br>
+
       <!-- Agregamos botones tipo radio -->
       <label for="">
         <input type="radio"  name="estado_civil">
@@ -100,6 +113,27 @@
         <input type="radio" name="estado_civil">
         Divorciado(a)
       </label><br><br>
+
+      <!-- Agregamos botones de seleccion multiple  -->
+      <label for="">
+        <input type="checkbox">
+        Nadar
+      </label><br><br>
+      <label for="">
+        <input type="checkbox">
+        Videogames
+      </label><br><br>
+      <label for="">
+        <input type="checkbox">
+        Ver TV
+      </label><br><br>
+      <label for="">
+        <input type="checkbox">
+        Escuchar Musica
+      </label><br><br>
+
+      <!-- Dejar comentarios -->
+      <textarea name="" id="" cols="20" rows="5"></textarea>
     </fieldset>
   </article>
 
